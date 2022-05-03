@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: grey grey;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(219, 219, 219);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 20px;
+  border: 3px solid grey;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: grey;
+  color: white;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 3rem;
+}
+
+section p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+img {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid grey;
+  background-color: white;
+  border-image: linear-gradient(white, grey) 25 / 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: 5px solid grey;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
